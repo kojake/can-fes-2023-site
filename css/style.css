@@ -169,3 +169,78 @@ header {
     }
 
 }
+
+a.btn_18 {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    position: relative;
+    width: 250px;
+    margin: auto;
+    padding: 1rem 4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #27acd9;
+    border: 3px solid #27acd9;
+    box-shadow: 5px 5px #27acd9;
+    transition: 0.3s ease-in-out;
+}
+
+a.btn_18:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+    color: #27acd9;
+}
+
+.scroll_content {
+    /* リスト全体のスタイル */
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.scroll_content li {
+    /* 各リストのスタイル */
+    width: 90%;
+    padding: 8px;
+    margin: 3px;
+    flex-shrink: 0;
+    list-style: none;
+}
+
+.scroll_content img {
+    /* 画像のスタイル */
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.scroll_content::-webkit-scrollbar {
+    height: 12px;
+    /* スクロールバーの高さ */
+}
+
+.scroll_content::-webkit-scrollbar-thumb {
+    background: #aaa;
+    /* ツマミの色 */
+    border-radius: 6px;
+    /* ツマミ両端の丸み */
+}
+
+.scroll_content::-webkit-scrollbar-track {
+    background: #ddd;
+    /* トラックの色 */
+    border-radius: 6px;
+    /* トラック両端の丸み */
+}
+
+
+@media screen and (min-width: 450px) {
+
+    .scroll_content li {
+        width: 45%;
+    }
+
+}
