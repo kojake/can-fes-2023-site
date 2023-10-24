@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>N 秋葉原 キャンフェス!!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 </head>
 
 <body align="center">
@@ -20,6 +20,7 @@
             <th>
                 <img src="image/キャンフェス-image2.png">
                 <h1>企画・展示</h1>
+                <p class="trade-value">{{ test }}FLP</p>
             </th>
             <th>
                 <img src="image/キャンフェス-image3.png">
