@@ -1,0 +1,155 @@
+/* 画面サイズが1279px以下の時はPC用メニューは非表示 */
+@media screen and (max-width: 1279px) {
+    .pc-menu {
+        display: none;
+    }
+}
+
+/* 画面サイズが1280px以上の時はスマホ用メニューは非表示 */
+@media screen and (min-width: 1280px) {
+    .sp-menu {
+        display: none;
+    }
+}
+
+/* 以下は前回までの内容 */
+header {
+    display: flex;
+    height: 150px;
+    background-color: rgb(0, 179, 134);
+}
+
+a.btn_06 {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 240px;
+	margin: auto;
+	padding: 1rem 4rem;
+    font-size: 40px;
+	font-weight: bold;
+	border-bottom: 7px solid #0686b2;
+	background: #27acd9;
+	color: #fff;
+}
+a.btn_06:hover {
+	margin-top: 6px;
+	border-bottom: 1px solid #0686b2;
+	color: #fff;
+}
+
+.main-menu {
+    margin: 0 auto;
+    display: flex;
+    width: 1280px;
+}
+
+.logo {
+    text-align: center;
+    padding: 18px;
+    font-size: 24px;
+    width: 200px;
+    background: #dddddd;
+}
+
+.pc-menu {
+    width: 100%;
+}
+
+.pc-menu>ul {
+    display: flex;
+    list-style: none;
+}
+
+.pc-menu>ul>li {
+    text-align: center;
+    font-size: 16px;
+    width: 25%;
+}
+
+.pc-menu>ul>li>a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    line-height: 60px;
+}
+
+.pc-menu>ul>li>a:hover {
+    background: #cccccc;
+}
+
+.sp-menu__box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background: #35bb99;
+}
+
+.sp-menu__box span,
+.sp-menu__box span:before,
+.sp-menu__box span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #ffffff;
+    position: absolute;
+}
+
+.sp-menu__box span:before {
+    bottom: 8px;
+}
+
+.sp-menu__box span:after {
+    top: 8px;
+}
+
+#sp-menu__check {
+    display: none;
+}
+
+#sp-menu__check:checked~.sp-menu__box span {
+    background: rgba(255, 255, 255, 0);
+}
+
+#sp-menu__check:checked~.sp-menu__box span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#sp-menu__check:checked~.sp-menu__box span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#sp-menu__check:checked~.sp-menu__content {
+    left: 0;
+}
+
+.sp-menu__content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #35bb99;
+    transition: all 0.5s;
+}
+
+.sp-menu__list {
+    padding: 70px 10px 0;
+}
+
+.sp-menu__item {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
