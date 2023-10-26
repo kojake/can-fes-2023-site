@@ -84,8 +84,8 @@ a.btn_06:hover {
     top: 0;
     right: 0;
     display: flex;
-    height: 60px;
-    width: 60px;
+    height: 150px;
+    width: 150px;
     justify-content: center;
     align-items: center;
     z-index: 90;
