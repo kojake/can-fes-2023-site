@@ -1,0 +1,78 @@
+.ranking {
+    counter-reset: rank;
+}
+
+.ranking li {
+    position: relative;
+}
+
+.ranking li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.ranking li:nth-child(-n + 3)::before {
+    /* 王冠のスタイル */
+    font-family: "Font Awesome 5 Free";
+    content: "\f521";
+    font-weight: 900;
+    position: absolute;
+    top: -45px;
+    /* 王冠の位置（縦軸） */
+    left: -20px;
+    /* 王冠の位置（横軸） */
+    font-size: 80px;
+    /* 王冠の大きさ */
+}
+
+.ranking li:nth-child(1)::before {
+    /* 1位（王冠）のスタイル */
+    color: #e6c300;
+}
+
+.ranking li:nth-child(2)::before {
+    /* 2位（王冠）のスタイル */
+    color: #a9a9a9;
+}
+
+.ranking li:nth-child(3)::before {
+    /* 3位（王冠）のスタイル */
+    color: #815a2b;
+}
+
+.ranking li:nth-child(n + 4)::before {
+    /* 3位以下のスタイル */
+    content: "";
+    position: absolute;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid rgba(0, 0, 0, 0.8);
+}
+
+.ranking li::after {
+    /* 順位（文字）のスタイル */
+    counter-increment: rank;
+    content: counter(rank) " 位";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.ranking img {
+    /* 画像のスタイル */
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ranking p {
+    /* タイトルのスタイル */
+    position: absolute;
+    bottom: 0;
+    width: 350px;
+    /* 画像の横幅に合わせる*/
+    padding: 3px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: right;
+}
