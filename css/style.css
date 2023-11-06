@@ -30,22 +30,3 @@ p {
 h6 {
     font-size: 10px;
 }
-
-@media screen and (max-width: 768px) {
-    /* Apply responsive styles for screens less than 768px wide */
-    table th {
-        display: block;
-    }
-
-    table th:nth-child(2) img {
-        width: 100%;
-    }
-
-    p[style="height: 60px"] {
-        height: auto;
-    }
-
-    p[style="height: 10cm"] {
-        height: auto;
-    }
-}

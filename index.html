@@ -6,6 +6,7 @@
     <title>N 秋葉原 キャンフェス!!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburger-menu.css">
+    <link rel="stylesheet" href="css/Time_table.css">
 </head>
 
 <body align="center">
@@ -16,18 +17,18 @@
         <div class="pc-menu">
             <ul>
                 <li>
-                    <a href="" class="btn_06">
+                    <a href="#pickup" class="btn_06">
                         PICK UP
                         <img style="width: 50px;" src="image/キャンフェス-image3.png">
                     </a>
                 </li>
                 <p style="width: 200px;">
-                <li>
-                    <a href="" class="btn_06">
-                        MAP
-                        <img style="width: 50px;" src="image/キャンフェス-image6.png">
-                    </a>
-                </li>
+                    <li>
+                        <a href="#map" class="btn_06">
+                            MAP
+                            <img style="width: 50px;" src="image/キャンフェス-image6.png">
+                        </a>
+                    </li>
             </ul>
         </div>
         <div class="sp-menu">
@@ -41,19 +42,19 @@
                         <h1>MENU</h1>
                     </li>
                     <p style="height: 20px;">
-                    <li>
-                        <a href="" class="btn_06">
-                            PICK UP
-                            <img style="width: 50px;" src="image/キャンフェス-image3.png">
-                        </a>
-                    </li>
+                        <li>
+                            <a onclick="window.location.href='https://kojake.github.io/can-fes-2023-site/index.html#pickup';" class="btn_06">
+                                PICK UP
+                                <img style="width: 50px;" src="image/キャンフェス-image3.png">
+                            </a>
+                        </li>
                     <p style="height: 20px;">
-                    <li>
-                        <a href="" class="btn_06">
-                            MAP
-                            <img style="width: 50px;" src="image/キャンフェス-image6.png">
-                        </a>
-                    </li>
+                        <li>
+                            <a onclick="window.location.href='https://kojake.github.io/can-fes-2023-site/index.html#pickup';" class="btn_06">
+                                MAP
+                                <img style="width: 50px;" src="image/キャンフェス-image6.png">
+                            </a>
+                        </li>
                 </ul>
             </div>
         </div>
@@ -67,20 +68,78 @@
                 <p style="width: 5cm;"></p>
             </th>
             <th>
-                <img src="image/キャンフェス-image2.png">
-                <h1>企画・展示</h1>
+                <img id="pickup" src="image/キャンフェス-image2.png">
+                <h1>展示&タイムテーブル</h1>
+                <h1 style="width: 200px; background-color: rgb(126, 140, 106); border-radius: 50px;">Time
+                    Table</h1>
+                <ul class="time-schedule">
+                    <li>
+                        <span class="time">10:30</span>
+                        <div class="sch_box">
+                            <p class="sch_title">開場</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">10:50〜11:00</span>
+                        <div class="sch_box">
+                            <p class="sch_title">オープニング</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">11:15〜11:45</span>
+                        <div class="sch_box">
+                            <p class="sch_title">箱の中身は何だろな</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">12:05〜12:30</span>
+                        <div class="sch_box">
+                            <p class="sch_title">ウミガメのスープ</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">12:35〜12:55</span>
+                        <div class="sch_box">
+                            <p class="sch_title">昼食(休憩)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">13:10〜13:30</span>
+                        <div class="sch_box">
+                            <p class="sch_title">パワポカラオケ</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">14:10〜14:30</span>
+                        <div class="sch_box">
+                            <p class="sch_title">Kahoot!大会</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">14:50</span>
+                        <div class="sch_box">
+                            <p class="sch_title">堀口＆関口の企画(超絶奇跡のダンス)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">15:10〜15:20</span>
+                        <div class="sch_box">
+                            <p class="sch_title">エンディング(マインドフルネス)</p>
+                        </div>
+                    </li>
+                </ul>
             </th>
             <th>
                 <img src="image/キャンフェス-image3.png">
             </th>
         </tr>
         <table>
-            <p style="height: 10cm;">
+            <p style="height: 5cm;">
             <div>
-                <img src="image/キャンフェス-image4.png">
+                <img id="map" src="image/キャンフェス-image4.png">
                 <h1>キャンパスマップ</h1>
             </div>
-            <img style="width: 1000px;" src="image/キャンフェス-image5.png">
+            <img style="width: 500px;" src="image/キャンフェス-image5.png">
             <h6>© KADOKAWA DWANGO Educational Institute</h6>
 </body>
 
