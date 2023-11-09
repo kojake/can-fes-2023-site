@@ -1,0 +1,11 @@
+@media screen and (max-width: 1279px) {
+    .pc-map{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .sp-map{
+        display: none;
+    }
+}
