@@ -2,10 +2,22 @@
     .pc-image{
         display: none;
     }
+    .pc-top-image{
+        display: none;
+    }
+    .pc-logo-image{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px) {
     .sp-image{
+        display: none;
+    }
+    .sp-top-image{
+        display: none;
+    }
+    .sp-logo-image{
         display: none;
     }
 }
