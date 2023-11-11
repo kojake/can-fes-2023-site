@@ -64,6 +64,17 @@
     border-radius: 6px;
 }
 
+.time-schedule .sch_box_finish {
+    display: inline-block;
+    width: 100%;
+    margin-left: 30px;
+    padding: 15px 10px 15px 10px;
+    vertical-align: middle;
+    background: rgb(89, 89, 89);
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
 .time-schedule .sch_title {
     font-size: 35px;
     font-weight: 700;
